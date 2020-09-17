@@ -1,6 +1,8 @@
+// PARTIALS
 @import "setup";
 @import "fontsAndColours";
 
+// GENERAL
 * {
     margin: 0;
     padding: 0;
@@ -11,11 +13,57 @@
     width: 90%;
     margin: 0 auto;
 }
+// HEADER
 
+h1 {
+    text-align: center;
+    font-family: $mainFont;
+    font-size: 2rem;
+    color: white;
+    margin: 0;
+    padding: 2%;
+}
+
+header {
+   background-color: $bleff;
+}
+
+
+// MAIN
 main {
     height: 100vh;
     background-image: url(../assets/juniperphoton-9i2YH9vyfWQ-unsplash.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    form {
+        font-family: $mainFont;
+        background-color: $ebonics;
+        color: black;
+
+        fieldset {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+   
+    p {
+        color: white;
+    }
+
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.description {
+    margin-bottom: 5%;
+    font-family: $secondaryFont;
+    font-size:  1.5rem;
 }
