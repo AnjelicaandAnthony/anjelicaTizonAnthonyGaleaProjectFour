@@ -260,7 +260,6 @@ header h1 {
 }
 
 main {
-  height: 100vh;
   background-image: url(../assets/juniperphoton-9i2YH9vyfWQ-unsplash.jpg);
   background-position: center;
   background-size: cover;
@@ -328,8 +327,4 @@ main form select {
 main form input[type=submit] {
   margin: 1% 0;
   width: 50%;
-}
-
-li {
-  background-color: white;
 }
