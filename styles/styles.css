@@ -246,7 +246,11 @@ html {
   margin: 0 auto;
 }
 
-h1 {
+header {
+  background-color: #332B29;
+}
+
+header h1 {
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
@@ -255,16 +259,35 @@ h1 {
   padding: 2%;
 }
 
-header {
-  background-color: #332B29;
-}
-
 main {
   height: 100vh;
   background-image: url(../assets/juniperphoton-9i2YH9vyfWQ-unsplash.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+main .mainContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90vh;
+}
+
+main .description {
+  margin-bottom: 5%;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.5rem;
+}
+
+main p {
+  color: white;
 }
 
 main form {
@@ -281,27 +304,32 @@ main form fieldset {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-main p {
-  color: white;
-}
-
-.mainContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 90vh;
+  padding: 5% 0;
 }
 
-.description {
-  margin-bottom: 5%;
-  font-family: "Roboto Slab", serif;
-  font-size: 1.5rem;
+main form label {
+  padding: 1%;
+}
+
+main form input[type=text] {
+  width: 50%;
+}
+
+main form select {
+  width: 50%;
+}
+
+main form input[type=submit] {
+  margin: 1% 0;
+  width: 50%;
+}
+
+li {
+  background-color: white;
 }

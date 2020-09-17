@@ -15,19 +15,18 @@
 }
 // HEADER
 
-h1 {
-    text-align: center;
-    font-family: $mainFont;
-    font-size: 2rem;
-    color: white;
-    margin: 0;
-    padding: 2%;
-}
-
 header {
-   background-color: $bleff;
-}
+    background-color: $bleff;
 
+    h1 {
+        text-align: center;
+        font-family: $mainFont;
+        font-size: 2rem;
+        color: white;
+        margin: 0;
+        padding: 2%;
+    }
+}
 
 // MAIN
 main {
@@ -37,6 +36,23 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
 
+    .mainContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+    }
+
+    .description {
+        margin-bottom: 5%;
+        font-family: $secondaryFont;
+        font-size:  1.5rem;
+    }
+
+    p {
+        color: white;
+    }
+
     form {
         font-family: $mainFont;
         background-color: $ebonics;
@@ -45,25 +61,30 @@ main {
         fieldset {
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 5% 0;
+        }
+
+        label {
+            padding: 1%;
+        }
+
+        input[type=text] {
+            width: 50%;
+        }
+
+        select {
+            width: 50%;
+        }
+
+        input[type=submit] {
+            margin: 1% 0;
+            width: 50%;
         }
     }
-
-   
-    p {
-        color: white;
-    }
-
 }
 
-.mainContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-}
-
-.description {
-    margin-bottom: 5%;
-    font-family: $secondaryFont;
-    font-size:  1.5rem;
+li {
+    background-color: white;
 }
