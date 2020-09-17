@@ -4,35 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Four</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
     <header>
-        <h1>Food and Drink</h1>
+        <div class="wrapper">
+            <h1>Food and Drink</h1>
+        </div>
     </header>
     <main>
-        <section>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, saepe possimus? Necessitatibus assumenda sequi suscipit quidem, asperiores quas accusamus vel ratione harum libero obcaecati enim, aliquid, totam optio ullam ex.
-                Vel similique eligendi expedita nostrum ratione officia error est dolorum, assumenda ea, vitae perferendis sint tempore</p>
-                <form action="#">
-                    <fieldset>
-                        <label for="searchbar">Food</label>
-                        <input type="text" id="searchbar" name="searchbar" placeholder="Type food here">
-                        <label for="XXXXXX"><p>Select a category of food below to explore</p></label>
-                        <select name="XXXXXy">
-                            <option disabled selected class="default">Select a Category</option>
-                            <option value="food">Food</option>
-                            <option value="drinks">Drinks</option>
-                            <input type="submit" value="Search">
-                        </select>
-                    </fieldset>
-                </form>
-        </section>
-        <section>
-            <div class="cardContainer">
-            </div>
-        </section>
-        <footer>
+        <div class="wrapper">
+            <section class="form">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, saepe possimus? Necessitatibus assumenda sequi suscipit quidem, asperiores quas accusamus vel ratione harum libero obcaecati enim, aliquid, totam optio ullam ex.
+                    Vel similique eligendi expedita nostrum ratione officia error est dolorum, assumenda ea, vitae perferendis sint tempore</p>
+                    <form action="#">
+                        <fieldset>
+                            <label for="searchbar">Food</label>
+                            <input type="text" id="searchbar" name="searchbar" placeholder="Type food here">
+                            <label for="XXXXXX"><p>Select a category of food below to explore</p></label>
+                            <select name="XXXXXy">
+                                <option disabled selected class="default">Select a Category</option>
+                                <option value="food">Food</option>
+                                <option value="drinks">Drinks</option>
+                                <input type="submit" value="Search">
+                            </select>
+                        </fieldset>
+                    </form>
+            </section>
+            <section>
+                <div class="cardContainer">
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="wrapper">
             <p>Created at Juno by Anjelica and Anthony</p>
-        </footer>
+        </div>
+    </footer>
 </body>
 </html>
