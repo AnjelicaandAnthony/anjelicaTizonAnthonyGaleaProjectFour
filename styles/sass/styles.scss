@@ -83,3 +83,25 @@ main {
         }
     }
 }
+
+// Results Section
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    
+    li {
+        list-style: none;
+        background-color: $hand;
+        padding: 20px;
+
+        h2 {
+            font-family: $mainFont;
+            font-size: 2rem;
+        }
+
+        p {
+            font-family: $secondaryFont;
+        }
+    }
+}

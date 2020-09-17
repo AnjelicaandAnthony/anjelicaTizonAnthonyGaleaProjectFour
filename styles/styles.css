@@ -328,3 +328,26 @@ main form input[type=submit] {
   margin: 1% 0;
   width: 50%;
 }
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+ul li {
+  list-style: none;
+  background-color: #C59263;
+  padding: 20px;
+}
+
+ul li h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+}
+
+ul li p {
+  font-family: "Roboto Slab", serif;
+}
