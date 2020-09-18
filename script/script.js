@@ -11,15 +11,23 @@ foodAndBeer.getPairings = function(userChoice){
         }
     }).then((res) => {
         console.log(res)
+        $('ul').empty();
         foodAndBeer.displayPairings(res) // ADD - CALL FUNCTION THAT DISPLAYS BEER PAIRINGS
     })
 }
 
 
 foodAndBeer.displayPairings = function(pairing){
-    console.log(pairing);
+    console.log(pairing)
+    pairing.forEach((beer)  => {
+    const title = $('<h2>').text(beer.name)
+    const description  = $('<p>').text(beer.food_pairing)
+    const image = $('<img>').attr({"src":beer.image_url})
+    const displayedBeer = $('<li>').append(title, description, image)
 
-}
+    $('ul').append(displayedBeer)
+    })
+}   
 
 
 //Functions that happen on page load
@@ -30,8 +38,8 @@ foodAndBeer.init = function() {
         console.log(foodDropdown)
         foodAndBeer.getPairings(foodDropdown);
     })
-  }
-  
+}
+
 // Document Ready
 $(function() {
 foodAndBeer.init();
