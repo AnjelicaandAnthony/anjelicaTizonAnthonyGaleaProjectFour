@@ -1,9 +1,6 @@
 // Namespacing
 const foodAndBeer = {};
 
-// AJAX call to API
-// pass in "food" parameter with a variable that the user enters
-
 foodAndBeer.getPairings = function(userChoice){
     $.ajax({
         url: 'https://api.punkapi.com/v2/beers',
@@ -14,17 +11,21 @@ foodAndBeer.getPairings = function(userChoice){
         }
     }).then((res) => {
         console.log(res)
+        foodAndBeer.displayPairings(res) // ADD - CALL FUNCTION THAT DISPLAYS BEER PAIRINGS
     })
 }
 
-// Event listeners:
 
+foodAndBeer.displayPairings = function(pairing){
+    console.log(pairing);
+
+}
 
 
 //Functions that happen on page load
 foodAndBeer.init = function() {
-    // foodAndBeer.getPairings()
-    $('.foodDropdown').on('change', function(){
+    $('.foodDropdown').on('change', function(event){
+        event.preventDefault();
         const foodDropdown = $(this).val();
         console.log(foodDropdown)
         foodAndBeer.getPairings(foodDropdown);
