@@ -21,10 +21,9 @@ foodAndBeer.displayPairings = function(pairing){
     console.log(pairing)
     pairing.forEach((beer)  => {
     const title = $('<h2>').text(beer.name)
-    const description  = $('<p>').text(beer.food_pairing)
-    const image = $('<img>').attr({"src":beer.image_url})
+    const description  = $('<p>').text(beer.food_pairing) 
+    const image =$('<img>').attr({"src":beer.image_url}) 
     const displayedBeer = $('<li>').append(title, description, image)
-
     $('ul').append(displayedBeer)
     })
 }   

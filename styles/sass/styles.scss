@@ -13,6 +13,10 @@
     width: 90%;
     margin: 0 auto;
 }
+
+img {
+
+}
 // HEADER
 
 header {
@@ -89,11 +93,17 @@ main {
 ul {
     display: flex;
     justify-content: space-around;
-    
+    flex-wrap: wrap;
+
     li {
         list-style: none;
         background-color: $hand;
         padding: 20px;
+        width: 30%;
+        margin: 2% 0 2% 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         h2 {
             font-family: $mainFont;
@@ -102,6 +112,32 @@ ul {
 
         p {
             font-family: $secondaryFont;
+            margin: 5% 0 5% 0;
+        }
+
+        img {
+            max-width: 25%;
         }
     }
+}
+
+// Show more button
+
+.showMoreButton {
+    display:block;
+    color:#fff;
+    margin:0 auto;
+    line-height:50px;
+    width:30%;
+    border-radius:30px;
+    text-decoration:none;
+    border:3px #ee5f4a solid;
+    background:#ee5f4a;
+    opacity:0.7;
+    margin-bottom:50px;
+
+    &:hover{
+    opacity:1;
+    }
+
 }

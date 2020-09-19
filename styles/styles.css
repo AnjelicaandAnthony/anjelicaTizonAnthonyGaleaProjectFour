@@ -335,12 +335,26 @@ ul {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 ul li {
   list-style: none;
   background-color: #C59263;
   padding: 20px;
+  width: 30%;
+  margin: 2% 0 2% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 ul li h2 {
@@ -350,4 +364,27 @@ ul li h2 {
 
 ul li p {
   font-family: "Roboto Slab", serif;
+  margin: 5% 0 5% 0;
+}
+
+ul li img {
+  max-width: 25%;
+}
+
+.showMoreButton {
+  display: block;
+  color: #fff;
+  margin: 0 auto;
+  line-height: 50px;
+  width: 30%;
+  border-radius: 30px;
+  text-decoration: none;
+  border: 3px #ee5f4a solid;
+  background: #ee5f4a;
+  opacity: 0.7;
+  margin-bottom: 50px;
+}
+
+.showMoreButton:hover {
+  opacity: 1;
 }
