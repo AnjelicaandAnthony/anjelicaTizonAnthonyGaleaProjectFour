@@ -35,8 +35,22 @@ foodAndBeer.displayPairings = function(pairing){
         //     if($("div:hidden").length == 0){
         //         $("#seeMore").fadeOut("slow");
         //     }
-        // });
+        // });     
     }
+
+    $('.showMoreButton').on('click', function(event){
+        event.preventDefault();
+        console.log('hello')
+        
+        for (let i = 3; i <= 5 ; i = i + 1) {
+            const title = $('<h2>').text(pairing[i].name)
+            const description  = $('<p>').text(pairing[i].food_pairing) 
+            const image =$('<img>').attr({"src":pairing[i].image_url}) 
+            const displayedBeer = $('<li>').append(title, description, image)
+    
+            $('ul').append(displayedBeer)
+        }
+    });   
     
     // pairing.forEach((beer)  => {
     // const title = $('<h2>').text(beer.name)
