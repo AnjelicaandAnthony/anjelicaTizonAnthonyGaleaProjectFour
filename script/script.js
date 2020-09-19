@@ -37,7 +37,26 @@ foodAndBeer.init = function() {
         const foodDropdown = $(this).val();
         console.log(foodDropdown)
         foodAndBeer.getPairings(foodDropdown);
-    })
+    });
+
+    // $('.searchbar').on('submit', function(event){
+    //     console.log('HI YOU SEARCHED');
+    //     event.preventDefault();
+    //     const foodSearch= $(this).val();
+    //     console.log(foodSearch)
+    //     foodAndBeer.getPairings(foodSearch);
+    // });
+
+    $('form').submit(function(event) {
+        console.log('HI YOU SEARCHED');
+        event.preventDefault();
+        const foodSearch= $('.searchbar').val();
+        console.log(foodSearch)
+        foodAndBeer.getPairings(foodSearch);
+      });
+
+    // 'input:text[class=‘searchbar’]'
+
 }
 
 // Document Ready
