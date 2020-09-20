@@ -188,3 +188,21 @@ footer p {
     margin: 0;
     padding: 2%;
     }
+
+// MEDIA QUERIES
+    @media (max-width: 720px) {
+        ul {
+            display: flex;
+            flex-direction: column;
+        }
+
+        ul li {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 720px) {
+        .showMoreButton{
+            font-size: 1rem;
+        }
+    }
