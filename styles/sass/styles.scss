@@ -104,7 +104,10 @@ ul {
         display: flex;
         flex-direction: column;
         align-items: center;
+<<<<<<< HEAD
         display: none;
+=======
+>>>>>>> 66284f4cc6df7ca3dadd3f9a524e43fa97e38318
 
         h2 {
             font-family: $mainFont;
@@ -125,7 +128,7 @@ ul {
 // Buttons
 
 .showMoreButton {
-    display:block;
+    // display:block;
     color:#fff;
     margin:0 auto;
     line-height:50px;
