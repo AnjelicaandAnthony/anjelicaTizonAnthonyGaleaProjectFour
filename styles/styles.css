@@ -280,9 +280,10 @@ main .mainContainer {
 }
 
 main .description {
-  margin-bottom: 5%;
+  margin-bottom: 2%;
   font-family: "Roboto Slab", serif;
   font-size: 1.5rem;
+  text-align: center;
 }
 
 main p {
@@ -310,6 +311,8 @@ main form fieldset {
       -ms-flex-align: center;
           align-items: center;
   padding: 5% 0;
+  background-color: #703438;
+  color: #fff;
 }
 
 main form label {
@@ -372,6 +375,13 @@ ul li img {
   max-width: 25%;
 }
 
+.showMoreContainer {
+  padding: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .showMoreButton {
   color: #fff;
   margin: 0 auto;
@@ -379,29 +389,50 @@ ul li img {
   width: 30%;
   border-radius: 30px;
   text-decoration: none;
-  border: 3px #ee5f4a solid;
-  background-color: #ee5f4a;
-  opacity: 0.7;
+  background-color: #703438;
   margin-bottom: 50px;
   display: none;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.5rem;
+  padding: 1%;
+  text-align: center;
 }
 
 .showMoreButton:hover {
-  opacity: 1;
+  background-color: #4d2427;
+  color: #fff;
 }
 
 .restart {
-  display: none;
+  color: #000;
   margin: 0 auto;
+  line-height: 50px;
   width: 30%;
+  border-radius: 30px;
   text-decoration: none;
-  border: 3px #F0F0F0 solid;
   background-color: #F0F0F0;
-  color: black;
-  opacity: 0.7;
   margin-bottom: 50px;
+  display: none;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.5rem;
+  padding: 1%;
+  text-align: center;
 }
 
 .restart:hover {
-  opacity: 1;
+  background-color: #4d2427;
+  color: #fff;
+}
+
+footer {
+  background-color: #332B29;
+}
+
+footer p {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  margin: 0;
+  padding: 2%;
 }
