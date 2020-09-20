@@ -355,6 +355,7 @@ ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: none;
 }
 
 ul li h2 {
@@ -380,11 +381,28 @@ ul li img {
   border-radius: 30px;
   text-decoration: none;
   border: 3px #ee5f4a solid;
-  background: #ee5f4a;
+  background-color: #ee5f4a;
+  opacity: 0.7;
+  margin-bottom: 50px;
+  display: none;
+}
+
+.showMoreButton:hover {
+  opacity: 1;
+}
+
+.restart {
+  display: none;
+  margin: 0 auto;
+  width: 30%;
+  text-decoration: none;
+  border: 3px #F0F0F0 solid;
+  background-color: #F0F0F0;
+  color: black;
   opacity: 0.7;
   margin-bottom: 50px;
 }
 
-.showMoreButton:hover {
+.restart:hover {
   opacity: 1;
 }
