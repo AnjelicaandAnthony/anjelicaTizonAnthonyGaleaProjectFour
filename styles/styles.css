@@ -279,6 +279,10 @@ main .mainContainer {
   height: 90vh;
 }
 
+main .mainDescription {
+  margin: 5% 0;
+}
+
 main .description {
   margin-bottom: 2%;
   font-family: "Roboto Slab", serif;
@@ -317,6 +321,7 @@ main form fieldset {
 
 main form label {
   padding: 1%;
+  text-align: center;
 }
 
 main form input[type=text] {
@@ -345,9 +350,9 @@ ul {
 ul li {
   list-style: none;
   background-color: #C59263;
-  padding: 20px;
+  padding: 3%;
   width: 30%;
-  margin: 2% 0 2% 0;
+  margin: 2% 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -368,7 +373,7 @@ ul li h2 {
 
 ul li p {
   font-family: "Roboto Slab", serif;
-  margin: 5% 0 5% 0;
+  margin: 5% 0;
 }
 
 ul li img {
@@ -382,7 +387,7 @@ ul li img {
   display: flex;
 }
 
-.showMoreButton {
+.showMoreContainer .showMoreButton {
   color: #fff;
   margin: 0 auto;
   line-height: 50px;
@@ -398,12 +403,12 @@ ul li img {
   text-align: center;
 }
 
-.showMoreButton:hover {
+.showMoreContainer .showMoreButton:hover {
   background-color: #4d2427;
   color: #fff;
 }
 
-.restart {
+.showMoreContainer .restart {
   color: #000;
   margin: 0 auto;
   line-height: 50px;
@@ -419,7 +424,7 @@ ul li img {
   text-align: center;
 }
 
-.restart:hover {
+.showMoreContainer .restart:hover {
   background-color: #4d2427;
   color: #fff;
 }
@@ -437,7 +442,19 @@ footer p {
   padding: 2%;
 }
 
+@media (max-width: 960px) {
+  .results h2 {
+    font-size: 1.5rem;
+  }
+}
+
 @media (max-width: 720px) {
+  form label {
+    padding: 2%;
+  }
+  form input[type=text] {
+    margin: 1%;
+  }
   ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -446,14 +463,32 @@ footer p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   ul li {
-    width: 100%;
+    width: 90%;
+  }
+  .showMoreContainer .showMoreButton {
+    font-size: 1rem;
+  }
+  .showMoreContainer .restart {
+    font-size: 1rem;
   }
 }
 
-@media (max-width: 720px) {
-  .showMoreButton {
-    font-size: 1rem;
+@media (max-width: 400px) {
+  form label {
+    margin: 2%;
+  }
+  .showMoreContainer .showMoreButton {
+    font-size: 0.8rem;
+  }
+  .showMoreContainer .restart {
+    font-size: 0.8rem;
   }
 }

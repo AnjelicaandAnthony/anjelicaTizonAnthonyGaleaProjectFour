@@ -1,0 +1,63 @@
+// MEDIA QUERIES
+@media (max-width: 960px) {
+
+    .results {
+        h2 {
+            font-size: 1.5rem;
+        };
+    }; 
+};
+
+@media (max-width: 720px) {
+
+    form {
+        label {
+            padding: 2%;
+        }
+
+        input[type=text] {
+            margin: 1%;
+        };
+    };
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        li {
+            width: 90%;
+        };
+    };
+
+    .showMoreContainer {
+        .showMoreButton {
+            font-size: 1rem;
+        };
+
+        .restart {
+            font-size: 1rem;
+        };
+    };
+    
+};
+
+@media (max-width: 400px) {
+
+    form {
+        label {
+            margin: 2%;
+        };
+    };
+
+    .showMoreContainer {
+        .showMoreButton {
+            font-size: 0.8rem;
+        };
+
+        .restart {
+            font-size: 0.8rem;
+        };
+    };
+};

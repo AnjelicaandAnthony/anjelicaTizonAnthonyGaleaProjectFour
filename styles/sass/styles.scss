@@ -1,24 +1,9 @@
 // PARTIALS
-@import "setup";
-@import "fontsAndColours";
+@import 'setup';
+@import 'generalStyles';
+@import 'fontsAndColours';
 
-// GENERAL
-* {
-    margin: 0;
-    padding: 0;
-}
-
-.wrapper {
-    max-width: 1250px;
-    width: 90%;
-    margin: 0 auto;
-}
-
-img {
-
-}
 // HEADER
-
 header {
     background-color: $bleff;
 
@@ -29,8 +14,8 @@ header {
         color: white;
         margin: 0;
         padding: 2%;
-    }
-}
+    };
+};
 
 // MAIN
 main {
@@ -44,18 +29,22 @@ main {
         justify-content: center;
         align-items: center;
         height: 90vh;
-    }
+    };
+
+    .mainDescription {
+        margin: 5% 0;
+    };
 
     .description {
         margin-bottom: 2%;
         font-family: $secondaryFont;
         font-size:  1.5rem;
-        text-align: center
-    }
+        text-align: center;
+    };
 
     p {
         color: white;
-    }
+    };
 
     form {
         font-family: $mainFont;
@@ -70,28 +59,29 @@ main {
             padding: 5% 0;
             background-color: $siennaRed;
             color: #fff;
-        }
+        };
 
         label {
             padding: 1%;
-        }
+            text-align: center;
+        };
 
         input[type=text] {
             width: 50%;
-        }
+        };
 
         select {
             width: 50%;
-        }
+        };
 
         input[type=submit] {
             margin: 1% 0;
             width: 50%;
-        }
-    }
-}
+        };
+    };
+};
 
-// Results Section
+// RESULTS
 
 ul {
     display: flex;
@@ -101,9 +91,9 @@ ul {
     li {
         list-style: none;
         background-color: $hand;
-        padding: 20px;
+        padding: 3%;
         width: 30%;
-        margin: 2% 0 2% 0;
+        margin: 2% 0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -112,97 +102,81 @@ ul {
         h2 {
             font-family: $mainFont;
             font-size: 2rem;
-        }
+        };
 
         p {
             font-family: $secondaryFont;
-            margin: 5% 0 5% 0;
-        }
+            margin: 5% 0;
+        };
 
         img {
             max-width: 25%;
-        }
-    }
-}
+        };
+    };
+};
 
-// Buttons
+// BUTTONS
 
 .showMoreContainer {
     padding: 2%;
     display: flex;
-}
 
-.showMoreButton {
-    color:#fff;
-    margin:0 auto;
-    line-height:50px;
-    width:30%;
-    border-radius:30px;
-    text-decoration:none;
-    background-color:$siennaRed;
-    margin-bottom:50px;
-    display: none;
-    font-family: $secondaryFont;
-    font-size: 1.5rem;
-    padding: 1%;
-    text-align: center;
+    .showMoreButton {
+        color: #fff;
+        margin: 0 auto;
+        line-height: 50px;
+        width: 30%;
+        border-radius: 30px;
+        text-decoration: none;
+        background-color: $siennaRed;
+        margin-bottom: 50px;
+        display: none;
+        font-family: $secondaryFont;
+        font-size: 1.5rem;
+        padding: 1%;
+        text-align: center;
+    
+        &:hover {
+        background-color: darken($siennaRed, 10%);
+        color: #fff;
+        };
+    };
 
-    &:hover {
-    background-color: darken($siennaRed, 10%);
-    color: #fff;
-    }
-}
-
-.restart {
-    color:#000;
-    margin:0 auto;
-    line-height:50px;
-    width:30%;
-    border-radius:30px;
-    text-decoration:none;
-    background-color:$ebonics;
-    margin-bottom:50px;
-    display: none;
-    font-family: $secondaryFont;
-    font-size: 1.5rem;
-    padding: 1%;
-    text-align: center;
-
-    &:hover {
-    background-color: darken($siennaRed, 10%);
-    color: #fff;
-    }
-}
+    .restart {
+        color: #000;
+        margin: 0 auto;
+        line-height: 50px;
+        width: 30%;
+        border-radius: 30px;
+        text-decoration: none;
+        background-color: $ebonics;
+        margin-bottom: 50px;
+        display: none;
+        font-family: $secondaryFont;
+        font-size: 1.5rem;
+        padding: 1%;
+        text-align: center;
+    
+        &:hover {
+        background-color: darken($siennaRed, 10%);
+        color: #fff;
+        };
+    };
+};
 
 // FOOTER
 
 footer {
     background-color: $bleff;
-}
 
-footer p {
-    font-family: $mainFont;
-    text-align: center;
-    font-size: 1rem;
-    color: white;
-    margin: 0;
-    padding: 2%;
-    }
+    p {
+        font-family: $mainFont;
+        text-align: center;
+        font-size: 1rem;
+        color: white;
+        margin: 0;
+        padding: 2%;
+    };
+};
 
-// MEDIA QUERIES
-    @media (max-width: 720px) {
-        ul {
-            display: flex;
-            flex-direction: column;
-        }
-
-        ul li {
-            width: 100%;
-        }
-    }
-
-    @media (max-width: 720px) {
-        .showMoreButton{
-            font-size: 1rem;
-        }
-    }
+@import 'mediaQueries';

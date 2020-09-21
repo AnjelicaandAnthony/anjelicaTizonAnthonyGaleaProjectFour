@@ -1,110 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Food and Beer Pairing</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link href='https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab&display=swap' rel='stylesheet'>
+    <link rel='stylesheet' href='./styles/styles.css'>
 </head>
+
 <body>
     <header>
-        <div class="wrapper">
+        <div class='wrapper'>
             <h1>Food and Beer Pairings</h1>
         </div>
     </header>
+
     <main>
-        <div class="wrapper">
-            <div class="mainContainer">
-                <section class="form">
-                    <p class="description">
-                    Select a food option below! Use either the search bar or the dropdown menu to make a selection.</p>
-                    <p class="description">Once you have selected a food option you will get the top three recommendations of beer to go with your main ingredient plus recipe ideas!</p> 
-                        <form action="#">
-                            <fieldset>
-                                <!-- Text Input -->
-                                <label for="searchbar">Food</label>
-                                <input type="text" id="searchbar" class="searchbar" name="searchbar" placeholder="Type food here">
-                                <input type="submit" class="submit" value="Search">
-                                <!-- Dropdown -->
-                                <label for="foodDropdown" >Select a category of food below to explore</label>
-                                <select name="foodDropdown" class="foodDropdown">
-                                    <option disabled selected class="default">Select a Category</option>
-                                    <option value="chicken">Chicken</option>
-                                    <option value="pasta">Pasta</option>
-                                    <option value="salmon">Salmon</option>
-                                    <option value="steak">Steak</option>
-                                    <option value="ribs">Ribs</option>
-                                    <option value="salad">Salad</option>
-                                    
-                                </select>
-                            </fieldset>
-                        </form>
+        <div class='wrapper'>
+            <div class='mainContainer'>
+                <section class='form'>
+                    <div class='mainDescription'>
+                        <p class='description'>
+                        Select a food option below! Use either the search bar or the dropdown menu to make a selection.</p>
+                        <p class='description'>Once you have selected a food option you will get the top three recommendations of beer to go with your main ingredient plus recipe ideas!</p> 
+                    </div>
+
+                    <form action='#'>
+                        <fieldset>
+
+                            <!-- Text Input -->
+                            <label for='searchbar'>Food</label>
+                            <input type='text' id='searchbar' class='searchbar' name='searchbar' placeholder='Type food here'>
+                            <input type='submit' class='submit' value='Search'>
+
+                            <!-- Dropdown -->
+                            <label for='foodDropdown' >Select a category of food below to explore</label>
+                            <select name='foodDropdown' class='foodDropdown'>
+                                <option disabled selected class='default'>Select a Category</option>
+                                <option value='chicken'>Chicken</option>
+                                <option value='pasta'>Pasta</option>
+                                <option value='salmon'>Salmon</option>
+                                <option value='steak'>Steak</option>
+                                <option value='ribs'>Ribs</option>
+                                <option value='salad'>Salad</option> 
+                            </select>
+
+                        </fieldset>
+                    </form>
                 </section>
             </div>
-            <section class="results">
+
+            <section class='results'>
                 <ul>
-                    <li>
-                        <div>
-                            <h2>Title of Beer</h2>
-                            <p>Description of Pairing</p>
-                            <img src="" alt="">
-                        </div>
-                    </li>
-
-                    <li>
-                        <div>
-                            <h2>Title of Beer</h2>
-                            <p>Description of Pairing</p>
-                            <img src="" alt="">
-                        </div>
-                    </li>
-
-                    <li>
-                        <div>
-                            <h2>Title of Beer</h2>
-                            <p>Description of Pairing</p>
-                            <img src="" alt="">
-                        </div>
-                    </li>
-
-                    <li>
-                        <div>
-                            <h2>Title of Beer</h2>
-                            <p>Description of Pairing</p>
-                            <img src="" alt="">
-                        </div>
-                    </li>
-
-                    <li>
-                        <div>
-                            <h2>Title of Beer</h2>
-                            <p>Description of Pairing</p>
-                            <img src="" alt="">
-                        </div>
-                    </li>
-
-                    <li>
-                        <div>
-                            <h2>Title of Beer</h2>
-                            <p>Description of Pairing</p>
-                            <img src="" alt="">
-                        </div>
-                    </li>
+                    <!-- Populate info from API here -->
                 </ul>
-                <div class="showMoreContainer">
-                    <a href="" class="showMoreButton">
+
+                <div class='showMoreContainer'>
+
+                    <button class='showMoreButton'>
                         Show More
-                    </a>
-                    <a href="" class="restart">
+                    </button>
+
+                    <button class='restart'>
                         Restart
-                    </a>
+                    </button>
+
                 </div>
             </section>
         </div>
     </main>
+
     <footer>
-        <div class="wrapper">
+        <div class='wrapper'>
             <p>Created at Juno by Anjelica and Anthony</p>
         </div>
     </footer>
@@ -112,6 +79,6 @@
     <!-- jQuery -->
     <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
     <!-- Link to script -->
-    <script src="./script/script.js"></script>
+    <script src='./script/script.js'></script>
 </body>
 </html>
