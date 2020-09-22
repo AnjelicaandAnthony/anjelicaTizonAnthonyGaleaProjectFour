@@ -403,7 +403,7 @@ ul li img {
   text-align: center;
 }
 
-.showMoreContainer .showMoreButton:hover {
+.showMoreContainer .showMoreButton:hover, .showMoreContainer .showMoreButton:focus {
   background-color: #4d2427;
   color: #fff;
 }
@@ -424,7 +424,7 @@ ul li img {
   text-align: center;
 }
 
-.showMoreContainer .restart:hover {
+.showMoreContainer .restart:hover, .showMoreContainer .restart:focus {
   background-color: #4d2427;
   color: #fff;
 }
@@ -440,6 +440,15 @@ footer p {
   color: white;
   margin: 0;
   padding: 2%;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover, footer a:focus {
+  color: #703438;
 }
 
 @media (max-width: 960px) {

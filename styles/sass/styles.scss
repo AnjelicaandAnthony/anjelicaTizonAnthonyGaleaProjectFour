@@ -136,7 +136,8 @@ ul {
         padding: 1%;
         text-align: center;
     
-        &:hover {
+        &:hover,
+        &:focus {
         background-color: darken($siennaRed, 10%);
         color: #fff;
         };
@@ -157,7 +158,8 @@ ul {
         padding: 1%;
         text-align: center;
     
-        &:hover {
+        &:hover,
+        &:focus {
         background-color: darken($siennaRed, 10%);
         color: #fff;
         };
@@ -176,6 +178,16 @@ footer {
         color: white;
         margin: 0;
         padding: 2%;
+    };
+
+    a {
+        text-decoration: none;
+        color: white;
+
+        &:hover,
+        &:focus {
+            color: $siennaRed;
+        };
     };
 };
 
